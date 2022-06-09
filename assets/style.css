@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap'); font-family: 'Bungee', cursive; "for multiple choice"  */
+@import url();
+
+:root {
+    --background-color: black;
+    --font-color: white;
+}
+
+* {
+    text-align: center;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: var(--background-color); */
+    background-image: url(./background-image.jpg);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+header  {
+    /* background-color: var(--background-color);
+    box-shadow: black  0 10px 10px; */
+}
+
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    color: white;
+    font-size: 75px;
+    padding: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Bungee Outline', cursive;
+    color: white;
+    padding: 50px;
+}
+
+.card {
+    border: 2px double white;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 1000px;
+    height: 500px;
+}
+    
+
+p {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Bungee Inline', cursive;
+    color: white;
+}
