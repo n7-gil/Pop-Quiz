@@ -1,57 +1,43 @@
-var timerEl = document.getElementById('start');
-var mainEl = document.getElementById('main');
+var beginEl = document.getElementById("start");
+var timerEl = document.getElementById("timer");
+var mainEl = document.getElementById("card");
 
+// once the begin button is clicked
+beginEl.addEventListener("click", startGame) 
 
-
-
-// Beginning sequence 
-function startCountdown() {
-    var startTimer = 5;
-
-    var timerInterval = setInterval(function () {
-        if (startTimer > 1) {
-            timerEl.textContent = "Pop quiz begins in " + startTimer;
-            startTimer--;
-
-
-
-        } else if (secondsLeft === 0) {
-            timerEl.textContent = startTimer + ' seconds remaining';
-            startTimer--;
-        } else {
-            timerEl.textContent = '';
-            clearInterval(timerInterval);
-        }
-     }, 1000);
+// the button itself dissapears, the main card appears, and the timer begins 
+function startGame(){
+    console.log("startGame");
+    beginEl.classList.add('hide');
+    mainEl.classList.remove('hide');
+    setTime();
 }
-startCountdown()
+// time remaining function 
+function setTime() {
+    var timeLeft = 90;
+  
+    var timeInterval = setInterval(function () {
+      if (timeLeft > 1) {
+        timerEl.textContent = timeLeft + ' seconds remaining';
+        timeLeft--;
+
+      } else if (timeLeft === 1) {
+        timerEl.textContent = timeLeft + ' second remaining';
+        timeLeft--;
+
+      } else {
+        // Once `timeLeft` gets to 0, set `timerEl` to an empty string
+        timerEl.textContent = '';
+        clearInterval(timeInterval);
+      }
+    }, 1000);
+  }
 
 
 
-console.log(startCountdown);
 
 
+function nextQuestion() {
 
+}
 
-// var timerEl = document.getElementById('countdown');
-// var mainEl = document.getElementById("main")
-
-
-
-
-
-
-// var quizQuestions
-// var quizContainer
-// var resultContainer
-// var submitButton
-
-
-// function generateQuiz(questions, quizContainer, resultContainer, submitButton);
-
-// function showQuestions(questions, quizContainer) {
-// // // code WIP
-
-// // }
-
-// // function showResults(questions)

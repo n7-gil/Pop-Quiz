@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap'); 
-@import url();
 
 :root {
     --background-color: black;
@@ -28,10 +27,10 @@ main {
     align-items: center;
 }
 
-header  {
+/* header  {
     /* background-color: var(--background-color);
     box-shadow: black  0 10px 10px; */
-}
+/* } */ 
 
 /* Pop quiz title  */
 h1 {
@@ -69,15 +68,18 @@ h3 {
 }
 
 /* starting timer */
+
 #start {
-    font-family: 'Bungee', cursive; 
     font-size: 25px;
-    color: white;
-    padding: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hide {
+    display: none;
 }
 
 /* main box that contains time left, questions, select, and score  */
-.card {
+#card {
     border: 2px double white;
     background-color: rgba(0, 0, 0, 0.3);
     width: 1025px;
@@ -89,11 +91,14 @@ h3 {
 #box {
     margin: 20px;
     padding: 25px;
+    flex-wrap: wrap;
 }
 
 #submit {
     margin: 85px;
     font-size: 15px;
+    flex-wrap: wrap;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #results {
@@ -101,6 +106,7 @@ h3 {
     color: white;
     display:inline-flex;
     font-family: 'Bungee Outline', cursive;
+    flex-wrap: wrap;
 }
 
 /* questions  */
@@ -110,15 +116,25 @@ p {
     font-family: 'Bungee Inline', cursive;
     color: white;
     margin: 15px;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {
 
-    header,
-    footer,
-    main {
+    h1,
+    footer {
         flex-direction: column;
         text-align: center;
         justify-content: center;
     }
+
+    main,
+    body {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+    }
 }
+
