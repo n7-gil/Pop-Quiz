@@ -16,26 +16,37 @@
     </header>
 
     <div class="container">
-        <button id="start">Begin Quiz</button>
+        <button class="bbutton" id="start">Begin Quiz</button>
     </div>
 
     <main>
         <div id="card" class="hide">
             <div class="box">
                 <h2 id="timer">Time Left</h2>
-                <div id="quiz"></div>
-                <p>Question</p>
+
+                <div id="questions"></div>
+                <div id="answers">
+                    <button class="btn" id="answer-a"></button>
+                    <button class="btn" id="answer-b"></button>    
+                </div>
             </div>
 
             <div class="box">
-                <button id="submit">Select</button>
+                <button class="sbutton" id="submit">Select</button>
             </div>
 
             <div class="box">
-                <div id="results">Score</div>
+                <div id="results">Final Score</div>
             </div>
         </div>
     </main>
+
+    <div id="container">
+        <h2 id="leaderboard">Leaderboard</h2>
+        <button class="rbutton" id="reset">Reset</button>
+
+    </div>
+
     <footer>
         <h3>
             Designed and made by Gilberto Escobedo &copy; 2022 N7-Gil
