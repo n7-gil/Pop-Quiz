@@ -93,21 +93,58 @@ h3 {
     flex-wrap: wrap;
 }
 
-/* submit button */
+/* submit button
 .sbutton {
     margin: 40px;
-    font-size: 25px;
+    font-size: 20px;
     color: black;
     flex-wrap: wrap;
     font-family: 'Bungee', cursive;
+} */
+
+#result {
+    font-size: 35px;
+    color: white;
+    font-family: 'Bungee', cursive;
+    margin: 40px;
+    padding: 20px;
 }
 
+/* reset button */
+.rbutton {
+    margin: 80px 0 0;
+    font-size: 35px;
+    width: 25%;
+    color: black;
+    background-color: rgba(254, 253, 253, 0.910);
+    flex-wrap: wrap;
+    font-family: 'Bungee', cursive;
+    display: none;
+}
+
+
 /* scoreboard  */
-#results {
+#score {
     font-size: 35px;
     color: white;
     display:inline-flex;
     font-family: 'Bungee Outline', cursive;
+    flex-wrap: wrap;
+    display: none;
+}
+
+
+
+#leaderboard {
+    font-size: 35px;
+    color: white;
+    display:inline-flex;
+    font-family: 'Bungee Outline', cursive;
+    flex-wrap: wrap;
+    border: 2px double white;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 1025px;
+    height: 575px;
     flex-wrap: wrap;
     display: none;
 }
@@ -140,7 +177,18 @@ h3 {
     padding: 5px;
 }
 
+/* changes to a pointer when hovering over buttons */
 .btn:hover {
+    cursor: pointer;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.817);
+}
+
+.bbutton:hover {
+    cursor: pointer;
+}
+
+.sbutton:hover{
     cursor: pointer;
 }
 
